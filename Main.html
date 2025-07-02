@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <style >
+    body {
+      transition: background-color 0.5s ease;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .block {
+      width: 100px;
+      height: 100px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid #333;
+    }
+
+    .block:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .red { background-color: red; }
+    .green { background-color: green; }
+    .blue { background-color: blue; }
+    .yellow { background-color: yellow; }
+  </style>
+  <body>
+       <h2>🎨 Click a Block to Change Background</h2>
+
+  <div class="container">
+    <div class="block red" onclick="changeBackground('red')"></div>
+    <div class="block green" onclick="changeBackground('green')"></div>
+    <div class="block blue" onclick="changeBackground('blue')"></div>
+    <div class="block yellow" onclick="changeBackground('yellow')"></div>
+  </div>
+  <script >
+    
+    function changeBackground(color) {
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+  </body>
+
+</html>
