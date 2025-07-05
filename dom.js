@@ -7,3 +7,6 @@ function Colour(){
     const colr = document.getElementById("colour").value;
     document.body.style.background = colr;
 }
+alert("Enter the Value");
+let a = prompt("Enter the Value here:");
+document.write(a);
