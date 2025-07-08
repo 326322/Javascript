@@ -1,0 +1,5 @@
+let date = new Date()
+console.log(date)
+let date1 = new Date(1990,2,11,4,3,1)
+console.log(date1)
+console.log(`Time ${date1.getTime()}`)
